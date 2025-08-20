@@ -14,9 +14,7 @@ const Footer = ({ brandName }) => {
         <p className="text-sm text-gray-400">
           &copy; {currentYear} {brandName}. All Rights Reserved.
         </p>
-        <p className="text-xs text-gray-500 mt-2">
-          Website by Your Name/Company (if you want to add this)
-        </p>
+        
         {/* You can add social media icons or other links here if needed */}
         {/* Example: 
         <div className="mt-4 flex justify-center space-x-4">

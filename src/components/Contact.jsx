@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle,ExternalLink } from 'lucide-react';
 
 const Contact = ({ contactInfo, astrologerName }) => {
   // State to manage form inputs
@@ -112,14 +112,16 @@ const Contact = ({ contactInfo, astrologerName }) => {
               </h3>
               {contactInfo.whatsapp.map((num, index) => (
                 <a 
-                  key={index}
-                  href={`https://wa.me/${num.replace(/\D/g, '')}`} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-gray-300 hover:text-amber-300 transition-colors duration-300"
-                >
-                  {num}
-                </a>
+  key={index}
+  href={`https://wa.me/${num.replace(/\D/g, '')}`} 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 text-gray-300 hover:text-amber-300 transition-all duration-300"
+>
+  {num}
+  <ExternalLink className="w-4 h-4" />
+</a>
+
               ))}
             </div>
 
@@ -128,12 +130,16 @@ const Contact = ({ contactInfo, astrologerName }) => {
                 <Mail className="w-6 h-6 mr-3 text-amber-400" />
                 Email Us
               </h3>
-              <a 
-                href={`mailto:${contactInfo.email}`}
-                className="text-gray-300 hover:text-amber-300 transition-colors duration-300"
-              >
-                {contactInfo.email}
-              </a>
+             <a 
+  href={`mailto:${contactInfo.email}`}
+  className="flex items-center gap-2 text-gray-300 hover:text-amber-300 transition-all duration-300"
+>
+  {contactInfo.email}
+  <ExternalLink className="w-4 h-4" />
+</a>
+
+
+
             </div>
           </div>
 
