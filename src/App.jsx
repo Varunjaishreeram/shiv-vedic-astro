@@ -15,7 +15,7 @@ const App = () => {
   // Data for the website with the new "About Me" text structure
   const astrologerDetails = {
     name: "Ajay Kothari",
-    brandName: "Shiv Vedic Astrology and Palmistry",
+    brandName: "bhakti vedic astrology and Palmistry",
     tagline: "Guiding Your Path with Ancient Wisdom",
     about: {
       introduction: "By the grace of the divine, I was fortunate to be born and work on the sacred banks of the Mother Ganga, in the hermitage of sages, Tapovan (Laxman Jhula). From childhood, I received spiritual education under the guidance of my father.",
