@@ -14,7 +14,7 @@ const Contact = ({ contactInfo, astrologerName }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // IMPORTANT: Replace with your own Access Key from web3forms.com
-  const accessKey = "15841e9c-2c05-4a0c-8070-abf8c5c5c988";
+  const accessKey = "1f2ac7b2-96a9-43ff-9fbf-a9143a59f35b";
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;

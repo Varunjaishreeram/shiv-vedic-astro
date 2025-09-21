@@ -15,7 +15,7 @@ const App = () => {
   // Data for the website with the new "About Me" text structure
   const astrologerDetails = {
     name: "Ajay Kothari",
-    brandName: "Shiv Vedic Astrology and Palmistry",
+    brandName: "Bhakti Vedic Astrology and Palmistry",
     tagline: "Guiding Your Path with Ancient Wisdom",
     about: {
       introduction: "By the grace of the divine, I was fortunate to be born and work on the sacred banks of the Mother Ganga, in the hermitage of sages, Tapovan (Laxman Jhula). From childhood, I received spiritual education under the guidance of my father.",
@@ -37,7 +37,7 @@ const App = () => {
         { id: "marbles", name: "Marbles", description: "High-quality marbles for vastu and decorative purposes.", image: "marbles.jpg", icon: <ScrollText /> },
     ],
     contact: {
-      centreName: "Shiv Vedic Astrology Centre",
+      centreName: "Bhakti Vedic Astrology Centre",
       address: "Laxman Chowk, P.O. Tapovan, Tehri Garhwal, Rishikesh, P.zip 249192",
       whatsapp: ["+919897537674", "+918171570003"],
       email: "ajaykothari2009@gmail.com"
