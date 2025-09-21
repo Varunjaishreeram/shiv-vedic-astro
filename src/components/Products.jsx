@@ -12,19 +12,19 @@ const Products = ({ products }) => {
             Enhance your spiritual journey with our carefully selected and energized items.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12">
           {products.map((product) => (
             <div 
               key={product.id} 
               className="bg-purple-900 bg-opacity-40 rounded-xl shadow-xl overflow-hidden group transform transition-all duration-500 hover:scale-105 border border-purple-700 hover:border-amber-500"
             >
-              <div className="aspect-w-3 aspect-h-2"> {/* For consistent image aspect ratio */}
+              <div className="aspect-w-3 aspect-h-2">
                 <img 
                   src={product.image} 
                   alt={product.name} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   onError={(e) => {
-                    e.target.onerror = null; // Prevents infinite loop if placeholder also fails
+                    e.target.onerror = null;
                     e.target.src = 'https://placehold.co/300x200/334155/9CA3AF?text=Image+Not+Available';
                   }}
                 />

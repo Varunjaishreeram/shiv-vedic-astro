@@ -31,8 +31,10 @@ const App = () => {
       { id: "planet-remedy", title: "Remedy for All Planets", description: "Effective astrological remedies to mitigate negative planetary influences and enhance positive ones.", icon: <Moon /> },
     ],
     products: [
-        { id: "crystals", name: "Authentic Charged Crystals", description: "Harness the healing energies of genuine, astrologically charged crystals.", image: "https://placehold.co/300x200/FFF5E1/8B5CF6?text=Charged+Crystal", icon: <Gem /> },
-        { id: "rudraksha-items", name: "Real Authentic Rudraksha", description: "Source powerful and authentic Rudraksha beads for spiritual and material benefits.", image: "https://placehold.co/300x200/FFF5E1/D97706?text=Authentic+Rudraksha", icon: <Star /> }
+        { id: "crystals", name: "Authentic Charged Crystals", description: "Harness the healing energies of genuine, astrologically charged crystals.", image: "crystals.jpg", icon: <Gem /> },
+        { id: "rudraksha-items", name: "Real Authentic Rudraksha", description: "Source powerful and authentic Rudraksha beads for spiritual and material benefits.", image: "rudraksha.jpg", icon: <Star /> },
+        { id: "God-idols", name: "God Idols", description: "Beautifully crafted idols of deities to enhance your spiritual space.", image: "god-idols.jpg", icon: <ShieldCheck /> },
+        { id: "marbles", name: "Marbles", description: "High-quality marbles for vastu and decorative purposes.", image: "marbles.jpg", icon: <ScrollText /> },
     ],
     contact: {
       centreName: "Shiv Vedic Astrology Centre",
