@@ -12,10 +12,13 @@ import { Moon, Star, ScrollText, ShieldCheck, Gem } from 'lucide-react';
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
 
-  // Data for the website with the new "About Me" text structure
+  // Data for the website with the new logo property
   const astrologerDetails = {
     name: "Ajay Kothari",
     brandName: "Bhakti Vedic Astrology and Palmistry",
+    // ✨ ADDED LOGO PATH HERE 
+    // Make sure your logo is named "logo.png" in the public folder, or change the name here.
+    logo: "/logo.png", 
     tagline: "Guiding Your Path with Ancient Wisdom",
     about: {
       introduction: "By the grace of the divine, I was fortunate to be born and work on the sacred banks of the Mother Ganga, in the hermitage of sages, Tapovan (Laxman Jhula). From childhood, I received spiritual education under the guidance of my father.",
@@ -24,28 +27,28 @@ const App = () => {
       mission: "My aim is to assist in bringing positivity and happiness into your life."
     },
     services: [
-      { id: "vedic-chart", title: "Vedic Astrology Chart", description: "In-depth analysis of your birth chart for insights into life patterns, strengths, and challenges.", icon: <Star /> },
-      { id: "palmistry", title: "Palmistry", description: "Discover your destiny and personality traits through the ancient art of palm reading.", icon: <ScrollText /> },
-      { id: "rudraksh-guidance", title: "Know Your Rudraksha", description: "Personalized recommendations for Rudraksha beads to enhance well-being and spiritual growth.", icon: <Gem /> },
-      { id: "vedic-pooja", title: "Vedic Pooja", description: "Authentic Vedic rituals and poojas performed for peace, prosperity, and problem resolution.", icon: <ShieldCheck /> },
-      { id: "planet-remedy", title: "Remedy for All Planets", description: "Effective astrological remedies to mitigate negative planetary influences and enhance positive ones.", icon: <Moon /> },
+        { id: "vedic-chart", title: "Vedic Astrology Chart", description: "In-depth analysis of your birth chart for insights into life patterns, strengths, and challenges.", icon: <Star /> },
+        { id: "palmistry", title: "Palmistry", description: "Discover your destiny and personality traits through the ancient art of palm reading.", icon: <ScrollText /> },
+        { id: "rudraksh-guidance", title: "Know Your Rudraksha", description: "Personalized recommendations for Rudraksha beads to enhance well-being and spiritual growth.", icon: <Gem /> },
+        { id: "vedic-pooja", title: "Vedic Pooja", description: "Authentic Vedic rituals and poojas performed for peace, prosperity, and problem resolution.", icon: <ShieldCheck /> },
+        { id: "planet-remedy", title: "Remedy for All Planets", description: "Effective astrological remedies to mitigate negative planetary influences and enhance positive ones.", icon: <Moon /> },
     ],
     products: [
         { id: "crystals", name: "Authentic Charged Crystals", description: "Harness the healing energies of genuine, astrologically charged crystals.", image: "crystals.jpg", icon: <Gem /> },
         { id: "rudraksha-items", name: "Real Authentic Rudraksha", description: "Source powerful and authentic Rudraksha beads for spiritual and material benefits.", image: "rudraksha.jpg", icon: <Star /> },
         { id: "God-idols", name: "God Idols", description: "Beautifully crafted idols of deities to enhance your spiritual space.", image: "god-idols.jpg", icon: <ShieldCheck /> },
-        { id: "marbles", name: "Marbles", description: "High-quality marbles for vastu and decorative purposes.", image: "marbles.jpg", icon: <ScrollText /> },
+        { id: "Raw-crystals", name: "Raw Crystals", description: "High-quality raw crystals for vastu and decorative purposes, and For bringing positivity in your house and working place and protact from bed eye effect and negativity", image: "marbles.jpg", icon: <ScrollText /> },
     ],
     contact: {
-      centreName: "Bhakti Vedic Astrology Centre",
-      address: "Laxman Chowk, P.O. Tapovan, Tehri Garhwal, Rishikesh, P.zip 249192",
-      whatsapp: ["+919897537674", "+918171570003"],
-      email: "ajaykothari2009@gmail.com"
+        centreName: "Bhakti Vedic Astrology Centre",
+        address: "Laxman Chowk, P.O. Tapovan, Tehri Garhwal, Rishikesh, P.zip 249192",
+        whatsapp: ["+919897537674", "+918171570003"],
+        email: "ajaykothari2009@gmail.com"
     },
     testimonials: [
-      { id: 1, name: "Priya S.", quote: "Ajay Ji's guidance was incredibly accurate and insightful. I feel much more clarity in my life now.", location: "Delhi" },
-      { id: 2, name: "Rajesh K.", quote: "The palmistry session was fascinating! So many things he said resonated deeply. Highly recommended.", location: "Mumbai" },
-      { id: 3, name: "Anjali M.", quote: "The Vedic pooja performed brought immense peace to my home. Grateful for his services.", location: "Rishikesh" }
+        { id: 1, name: "Priya S.", quote: "Ajay Ji's guidance was incredibly accurate and insightful. I feel much more clarity in my life now.", location: "Delhi" },
+        { id: 2, name: "Rajesh K.", quote: "The palmistry session was fascinating! So many things he said resonated deeply. Highly recommended.", location: "Mumbai" },
+        { id: 3, name: "Anjali M.", quote: "The Vedic pooja performed brought immense peace to my home. Grateful for his services.", location: "Rishikesh" }
     ]
   };
 
@@ -95,6 +98,8 @@ const App = () => {
   return (
     <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen text-gray-200">
       <Navbar 
+        // ✨ PASSING THE LOGO PROP HERE
+        logoSrc={astrologerDetails.logo} 
         brandName={astrologerDetails.brandName} 
         navLinks={navLinks} 
         activeSection={activeSection}
