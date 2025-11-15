@@ -96,7 +96,8 @@ const App = () => {
 
 
   useEffect(() => {
-    document.dispatchEvent(new Event('render-event'));
+    // Tell the prerender plugin that the app finished rendering
+    window.dispatchEvent(new Event("render-event"));
   }, []);
 
   return (

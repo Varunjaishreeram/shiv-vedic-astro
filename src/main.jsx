@@ -1,12 +1,10 @@
-import React from 'react';
-import { hydrateRoot } from 'react-dom/client';
-import App from './App';
-import './index.css';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
 
-export function createApp() {
-  return <App />;
-}
-
-if (typeof window !== 'undefined') {
-  hydrateRoot(document.getElementById('root'), <App />);
-}
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
