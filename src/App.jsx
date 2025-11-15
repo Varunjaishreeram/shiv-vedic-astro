@@ -95,6 +95,10 @@ const App = () => {
   }, [navLinks]);
 
 
+  useEffect(() => {
+    document.dispatchEvent(new Event('render-event'));
+  }, []);
+
   return (
     <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen text-gray-200">
       <Navbar 
